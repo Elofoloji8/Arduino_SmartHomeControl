@@ -270,7 +270,7 @@ void loop() {
         analogWrite(BUZZER_PIN, 0); 
     }
 
-  /*  // 4. RFID ve LCD Kontrolü
+    // 4. RFID ve LCD Kontrolü
     if (rfid.PICC_IsNewCardPresent() && rfid.PICC_ReadCardSerial()) {
         currentScreen = RFID_MESSAGE;
         bool yetkili = kartlariKarsilastir(rfid.uid.uidByte);
@@ -288,7 +288,7 @@ void loop() {
         }
         messageEndTime = currentMillis + RFID_MESSAGE_DURATION;
         rfid.PICC_HaltA(); 
-    }*/
+    }
     
     // 4. RFID ve LCD Kontrolü
     if (rfid.PICC_IsNewCardPresent()) 
