@@ -277,7 +277,7 @@ void loop() {
         if (yetkili) { 
             lcd.clear();
             lcd.setCursor(0, 0); lcd.print("HOS GELDINIZ!");
-            lcd.setCursor(0, 1); lcd.print(yetkiliID == 1 ? "AYSEGUL" : "ELIF");
+            lcd.setCursor(0, 1); lcd.print(yetkiliID == 1 ? "ELIF" : "BUSE");
             // Yetkili girişte Buzzer'ı manuel olarak kontrol et
             analogWrite(BUZZER_PIN, 255); delay(200); analogWrite(BUZZER_PIN, 0); 
         } else {
